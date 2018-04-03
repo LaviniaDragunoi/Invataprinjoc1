@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Invata prin joc</string>
+    <string name="address">Bucharest, Romania</string>
+    <string name="blogger">By <b>Lavinia Dragunoi</b></string>
+    <string name="description">Playful ideas for you and your child, from the first month of his life.</string>
+    <string name="goodbye">Enjoy my blog!</string>
+    <string name="www">http://invataprinjoc.blogspot.ro</string>
+    <string name="email">invataprinjoc@yahoo.ro</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="twitter">Twitter</string>
+</resources>

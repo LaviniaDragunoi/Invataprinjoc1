@@ -1,0 +1,91 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ScrollViewStyle">
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        style="@style/MatchStyle"
+        android:layout_marginTop="@dimen/top_margin"
+        tools:context="com.example.android.invataprinjoc.MainActivity">
+
+        <ImageView
+            android:id="@+id/image_view"
+            style="@style/MatchWrapStyle"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/logo"/>
+
+        <LinearLayout
+            android:id="@+id/main_text_view"
+            style="@style/WrapStyle"
+            android:layout_below="@id/image_view"
+            android:layout_marginTop="@dimen/top_margin"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextStyle"
+                android:text="@string/description" />
+
+            <TextView
+                style="@style/TextStyle"
+                android:text="@string/goodbye" />
+
+            <TextView
+                style="@style/TextStyle"
+                android:text="@string/blogger" />
+
+            <TextView
+                style="@style/TextStyle"
+                android:layout_gravity="center"
+                android:drawablePadding="@dimen/top_margin"
+                android:drawableStart="@drawable/marker"
+                android:text="@string/address" />
+
+            <TextView
+                android:id="@+id/link"
+                style="@style/TextStyle"
+                android:layout_gravity="center"
+                android:autoLink="web|all"
+                android:drawablePadding="@dimen/top_margin"
+                android:drawableStart="@drawable/geography"
+                android:text="@string/www" />
+
+            <TextView
+                style="@style/TextStyle"
+                android:layout_gravity="center"
+                android:autoLink="email"
+                android:drawablePadding="@dimen/top_margin"
+                android:drawableStart="@drawable/email"
+                android:text="@string/email" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/MatchWrapStyle"
+            android:layout_below="@id/main_text_view"
+            android:layout_marginBottom="@dimen/top_margin"
+            android:layout_marginTop="@dimen/top_margin"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/ButtonStyle"
+                android:layout_gravity="start"
+                android:contentDescription="@string/google"
+                android:onClick="openGoogle"
+                android:src="@drawable/google" />
+
+            <ImageView
+                style="@style/ButtonStyle"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/twitter"
+                android:onClick="openTwitter"
+                android:src="@drawable/twitter" />
+
+            <ImageView
+                style="@style/ButtonStyle"
+                android:layout_gravity="end"
+                android:contentDescription="@string/facebook"
+                android:onClick="openFb"
+                android:src="@drawable/facebook" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
